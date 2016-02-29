@@ -1,0 +1,154 @@
+
+header{
+
+	background-color:#c0c0c0;
+	height: 100px;
+	
+}
+
+span{
+
+	font-weight: bold;
+	padding-left: 2%;
+	font-size: 195%;
+
+}
+
+h1
+{
+	font-size:170%;
+}
+
+h2
+{
+	font-size: 120%;
+}
+
+body{
+	font-size: 1.5em;
+}
+
+menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+menu menuitem{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.2% 1%;
+    text-decoration: none;
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+menu menuitem:hover {
+	background-color: #111;
+}
+
+#mainNav{
+	float:left;
+	width:100%;
+}
+
+#textoPrincipal
+{
+	float:right;
+	min-width: 100%;
+}
+
+aside{
+
+	float:left;
+	width:20%
+
+}
+
+.articleInfo{
+
+	float: left;
+	width:70%;
+
+}
+
+.images{
+
+	float: left;
+	width: 70%;
+}
+
+.navSide{
+	float:left;
+	width:20%;
+}
+
+.navSide ul li a{
+
+	color:black;
+	text-decoration: none;
+	
+}
+
+.navSide ul li a:hover{
+
+	color:black;
+	text-decoration: underline;
+	
+}
+
+.navSide ul li a:visited {
+
+  font-weight: bold;
+  text-decoration: line-through;
+  
+}
+
+@media print {
+
+	header, #mainNav, footer 
+	{
+		display: none;
+	}
+	
+	.navSide
+       {
+		clear:left;
+		width:40%;
+    }
+
+}
+
+@media screen and (max-width:720px){
+
+	.navSide
+       {
+		clear:left;
+		width:40%;
+    }
+	
+	.articleInfo{
+		width:100%;
+	}
+	
+	.images
+	{
+		width: 100%;
+	}
+	
+	menu menuitem
+	{
+		clear:left;
+		width:100%;
+	}
+	
+}
+
+
+
+
+
+
